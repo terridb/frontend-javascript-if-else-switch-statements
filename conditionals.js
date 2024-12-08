@@ -8,24 +8,30 @@ console.log('Is 2 gelijk aan 2?', equalNumbers);
 // ==========================================
 // 1. Declareer een variabele en sla daar de uitkomst van de vergelijking "Is 10 groter dan 20?" in op        // geeft false wanneer gelogd
 // ==========================================
-
+const number = 10 > 20;
+console.log('Is 10 groter dan 20?', number);
 
 // ==========================================
 // 2. Declareer een variabele en sla daar de uitkomst van de vergelijking "Is 10 ongelijk aan 11?" in op        // geeft true wanneer gelogd
 // ==========================================
-
+const number2 = 10 !== 11;
+console.log('Is 10 ongelijk aan 11?', number2);
 
 // ==========================================
 // 3. Declareer een variabele en sla daar in op of de woorden 'zoet' en 'sappig' hetzelfde zijn                // geeft false wanneer gelogd
 // ==========================================
-
+const number3 = "zoet" === "sappig";
+console.log(number3);
 
 // ==========================================
 // 4a. Declareer een variabele en sla daar het rapportcijfer 9 in op.
 // 4b. schrijf een script dat checkt of het rapportcijfer groter is dan 8.
 //     Als dat zo is, loggen we 'Cum laude!' in de console.                                                     // geeft 'Cum laude!' wanneer gelogd
 // ==========================================
-
+const grade = 9;
+if (grade > 8) {
+    console.log('Cum laude!');
+}
 
 // ==========================================
 // 5a. Gebruik onderstaande variabelen isRaining en temperature;
@@ -34,5 +40,11 @@ console.log('Is 2 gelijk aan 2?', equalNumbers);
 // Tip: verander de waarde van isRaining en temperature even handmatig om te kijken of jouw 2e conditie klopt
 // ==========================================
 
-const isRaining = false;
-const temperature = 23;
+const isRaining = true;
+const temperature = 12;
+if ((isRaining == false) && (temperature => 21)){
+    console.log('Je kunt een korte broek aan!')
+}
+if ((isRaining == true) && (temperature < 21)){
+    console.log('Doe een jas aan!')
+}
